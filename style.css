@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Body Style */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+}
+
+h1, h2, h3 {
+    margin: 1.25rem;
+}
+
+p {
+    margin: 2.2rem 1.25rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    margin: 1.25rem;
+    padding-top: 1.5rem;
+}
+
+/* Utility styles */
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 13px 40px;
+    background-color: #fff ;
+    margin: 2.5rem 1.25rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+
+/* main styling */
+#page-nav {
+    display: flex;
+    margin: auto;
+    padding: 60px 0 0 0;
+    width: 50vw;
+    flex: 1;
+    justify-content: center;
+}
+
+#page-nav .page {
+   margin: 10px;
+   flex: 1;
+   margin-top: 200px;
+   padding: 20px;
+   background-color: #016972;
+   color: #fff;
+   border-radius: 5px;
+}
+
+#page-nav .page:hover {
+    background-color: #074147;
+   color: #fff;
+}
+
+#main {
+    margin: auto;
+    padding:1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+    align-items: center;
+}
+.box1 {
+    width: 100%;
+    background-color: #e28525;
+    color: #fff;
+    border-radius: 8px 0 0 8px;
+}
+
+.box1 a {
+    color: #e28525;
+}
+
+.box1 a:hover {
+    color: #fff;
+    background-color: #e28525;
+    border: 1px solid #fff;
+}
+
+.box2 {
+    width: 100%;
+    background-color: #016972;
+    color: #fff;
+}
+
+.box2 a {
+    color: #016972;
+}
+
+.box2 a:hover {
+    color: #fff;
+    background-color: #016972;
+    border: 1px solid #fff;
+}
+
+.box3 {
+    width: 100%;
+    background-color: #00403f;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+}
+
+.box3 a {
+    color: #00403f;
+}
+
+.box3 a:hover {
+    color: #fff;
+    background-color: #00403f;
+    border: 1px solid #fff;
+}
+
+/* CSS GRID STYLE */
+
+#items {
+    background-color: #333;
+    padding: 2rem;
+    margin: 0 auto;
+    width: 50%;
+    display: grid;
+    grid-template-areas: 
+    'a a a b b'
+    'c c d d d'
+    'c c e e e';
+    gap: 10px;
+}
+
+#items div {
+    place-items: center;
+    padding: 3rem;
+    text-align: center;
+}
+
+.item-a {
+    background-color: #eb5020;
+    grid-area: a;
+}
+
+.item-b {
+    background-color: #ffa401;
+    grid-area: b;
+}
+
+.item-c {
+    background-color: #05aa42;
+    grid-area: c;
+}
+
+.item-d {
+    background-color: #01aefd;
+    grid-area: d;
+}
+
+.item-e {
+    background-color: #01aefd;
+    grid-area: e;
+}
